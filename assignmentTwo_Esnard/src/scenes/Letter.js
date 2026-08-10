@@ -23,22 +23,19 @@ export class Letter extends Phaser.Scene {
     }
 
     startRandomWords() {
-        this.available_pool = this.add.group();
-
         for(let i = 0; i < TOTAL_DISPLAYED_WORDS; i++) {
-            this.available_pool.add(this.getWord(WORDPOOL_X + (i * WORDPOOL_SPACING), WORDPOOL_Y));
+            this.getWord(WORDPOOL_X + (i * WORDPOOL_SPACING), WORDPOOL_Y);
             this.getNextLetter();
         }
     }
 
     wordMoveEvent() {
-        this.events.on('replace_word', (replace_x, replace_y) => {
-                this.replaceWord(replace_x, replace_y);
+        this.events.on('word_moved', (replace_x, replace_y) => {
+            this.replaceWord(replace_x, replace_y);
         });
     }
 
     replaceWord(x, y) {
-        console.log("I'm being used~");
         this.getWord(x, y);
         this.getNextLetter();
     }

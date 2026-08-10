@@ -12,7 +12,6 @@ class Word extends Phaser.GameObjects.Container {
         this.createWordSlip(); 
 
         this.moved = false;
-        this.checkDragEvent();
 
         this.scene.add.existing(this);
     }
@@ -35,18 +34,11 @@ class Word extends Phaser.GameObjects.Container {
         this.makeDraggable(this.x, this.y);
     }
 
-    checkDragEvent() {
-            this.scene.events.once('word_moved', (x, y) => {
-                if(!this.moved) {
-                    console.log("i'm being called!");
-                    this.scene.events.emit('replace_word', x, y);
-                    this.moved = true;
-                }
-                
-                console.log(this.moved);
-            });
-
-    }
+    /*
+        makeDraggable() coded referencing 
+        tutorial by Scott Westover:
+            https://www.youtube.com/watch?v=jWglIBp4usY$0 
+    */
 
     makeDraggable(startX, startY) {
         this.setInteractive();
@@ -62,7 +54,10 @@ class Word extends Phaser.GameObjects.Container {
             this.off(Phaser.Input.Events.POINTER_UP, stopDrag);
             this.off(Phaser.Input.Events.POINTER_MOVE, onDrag);
 
-            this.scene.events.emit('word_moved', startX, startY);
+            if(!this.moved) {
+                this.scene.events.emit('word_moved', startX, startY);
+                this.moved = true;
+            }
         }
 
         function onDrag(pointer) {
@@ -70,14 +65,7 @@ class Word extends Phaser.GameObjects.Container {
             this.y = pointer.y;
         }
 
-        function destroy() {
-            this.off(Phaser.Input.Events.POINTER_DOWN, startDrag);
-            this.off(Phaser.Input.Events.POINTER_UP, stopDrag);
-            this.off(Phaser.Input.Events.POINTER_MOVE, onDrag);
-        }
-
         this.on(Phaser.Input.Events.POINTER_DOWN, startDrag);
-        this.on(Phaser.GameObjects.Events.DESTROY, destroy);
     }
 }
 
