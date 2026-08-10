@@ -9,7 +9,7 @@ const config = {
     width: 720,
     height: 1080,
     backgroundColor: '#FFF6EA',
-    pixelArt: false,
+    pixelArt: true,
     scene: [
         Start, 
         Letter

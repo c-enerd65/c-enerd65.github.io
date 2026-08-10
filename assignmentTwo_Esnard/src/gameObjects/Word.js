@@ -25,7 +25,7 @@ class Word extends Phaser.GameObjects.Container {
         let word_paddingY = this.word_text.height + PADDING;
         
         const background = this.scene.add.rectangle(0, 0, word_paddingX, word_paddingY, 0xFFF6EA);
-        background.setOrigin(0.5);
+        background.setOrigin(0.55);
 
         let click_paddingX = word_paddingX * CLICK_PADDING;
         let click_paddingY = word_paddingY * CLICK_PADDING;
