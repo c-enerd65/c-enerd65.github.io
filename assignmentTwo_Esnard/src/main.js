@@ -1,16 +1,18 @@
 import { Start } from './scenes/Start.js';
+import { Letter } from './scenes/Letter.js';
 
 const config = {
     type: Phaser.AUTO,
-    title: 'Overlord Rising',
+    title: 'A Love Letter',
     description: '',
     parent: 'game-container',
-    width: 1280,
-    height: 720,
-    backgroundColor: '#000000',
+    width: 720,
+    height: 1080,
+    backgroundColor: '#FFF6EA',
     pixelArt: false,
     scene: [
-        Start
+        Start, 
+        Letter
     ],
     scale: {
         mode: Phaser.Scale.FIT,
