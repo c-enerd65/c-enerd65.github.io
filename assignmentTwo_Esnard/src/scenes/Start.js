@@ -6,6 +6,7 @@ export class Start extends Phaser.Scene {
 
     preload() {
         this.loadJSON();
+        this.loadFonts();
     }
 
     create() {
@@ -14,7 +15,7 @@ export class Start extends Phaser.Scene {
     }
 
     loadFonts() {
-
+        this.load.font('FSEX', 'assets/fonts/FSEX302.ttf');
     }
 
     loadJSON() {

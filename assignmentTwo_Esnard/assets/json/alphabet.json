@@ -1,39 +1,39 @@
  { "alpha": [
 	{
 		"letter": "a",
-		"wordpool": ["and", "are", "anymore", "about", "able", "at", "all", "another", "am", "awful", "attention", "avoiding", "away", "acting", "acts", "above", "alone", "alongside"]
+		"wordpool": ["and", "are", "anymore", "about", "able", "at", "all", "another", "am", "awful", "attention", "avoiding", "away", "acting", "acts", "above", "alone", "alongside", "account", "abused", "again", "anchored", "always"]
 	},
 	{
 		"letter": "b",
-		"wordpool": ["been", "but", "be", "because", "betrayed", "burning", "bound", "between", "become", "blind", "break"]
+		"wordpool": ["been", "but", "be", "because", "betrayed", "burning", "bound", "between", "become", "blind", "break", "bank", "broken", "blocked", "behind", "beneath", "begun", "became", "blooming", "beautiful", "breath", "becoming", "bloom", "burden"]
 	},
 	{
 		"letter": "c",
-		"wordpool": ["come", "can", "could", "cause", "certainty", "conversations", "conflict", "concerning", "comfortability", "catch", "can't", "clarity", "cruelest", "choking"]
+		"wordpool": ["come", "can", "could", "cause", "certainty", "conversations", "conflict", "concerning", "comfortability", "catch", "can't", "clarity", "cruelest", "choking", "chance", "casino", "closed", "compliments", "changed", "chaos", "comes", "close", "capable"]
 	},
 	{
 		"letter": "d",
-		"wordpool": ["doing", "do", "disgust", "distraction", "does", "disrespect", "danced", "dying", "dim", "did", "deepest", "dream"]
+		"wordpool": ["doing", "do", "disgust", "distraction", "does", "disrespect", "danced", "dying", "dim", "did", "deepest", "dream", "dark"]
 	},
 	{
 		"letter": "e",
-		"wordpool": ["enough", "efforts", "endless", "everything"]
+		"wordpool": ["enough", "efforts", "endless", "everything", "earth", "enters", "expected", "even"]
 	},
 	{
 		"letter": "f",
-		"wordpool": ["fault", "for", "fact", "free", "from", "find", "forceful", "final", "first", "feelings", "feel", "fading", "falling"]
+		"wordpool": ["fault", "for", "fact", "free", "from", "find", "forceful", "final", "first", "feelings", "feel", "fading", "falling", "financially", "funds", "flew", "fire"]
 	},
 	{
 		"letter": "g",
-		"wordpool": ["grief", "guess", "god", "give", "giving", "glance", "grin", "guard", "gave"]
+		"wordpool": ["grief", "guess", "god", "give", "giving", "glance", "grin", "guard", "gave", "green", "genuine", "grows"]
 	},
 	{
 		"letter": "h",
-		"wordpool": ["hey", "have", "how", "however", "happened", "honesty", "had", "happen", "hurts", "holding", "harm", "hatred", "her", "heart"]
+		"wordpool": ["hey", "have", "how", "however", "happened", "honesty", "had", "happen", "hurts", "holding", "harm", "hatred", "her", "heart", "him", "hearts", "hear", "here", "haze", "hands", "hide", "hope", "helps", "heal"]
 	},
 	{
 		"letter": "i",
-		"wordpool": ["i", "it", "imagine", "in", "is", "it's", "intentions", "if", "illusion"]
+		"wordpool": ["i", "it", "imagine", "in", "is", "it's", "intentions", "if", "illusion", "i've", "i'm"]
 	},
 	{
 		"letter": "j",
@@ -45,39 +45,39 @@
 	},
 	{
 		"letter": "l",
-		"wordpool": ["listen", "like", "love", "last", "life", "lies", "loud", "loving", "lovers", "lasting", "living"]
+		"wordpool": ["listen", "like", "love", "last", "life", "lies", "loud", "loving", "lovers", "lasting", "living", "lost", "light", "learn"]
 	},
 	{
 		"letter": "m",
-		"wordpool": ["mostly", "must", "my", "memories", "myself", "may", "much", "me", "meant", "more", "make", "moon", "moment"]
+		"wordpool": ["mostly", "must", "my", "memories", "myself", "may", "much", "me", "meant", "more", "make", "moon", "moment", "man", "money", "mentally", "mistake"]
 	},
 	{
 		"letter": "n",
-		"wordpool": ["never", "need", "not", "now", "next", "nothing"]
+		"wordpool": ["never", "need", "not", "now", "next", "nothing", "nectar", "neither"]
 	},
 	{
 		"letter": "o",
-		"wordpool": ["ones", "on", "or", "only", "of", "one", "our", "obvious", "obsessive", "overshadowed", "off"]
+		"wordpool": ["ones", "on", "or", "only", "of", "one", "our", "obvious", "obsessive", "overshadowed", "off", "others", "open", "opening"]
 	},
 	{
 		"letter": "p",
-		"wordpool": ["person", "point", "perhaps", "problems", "peace", "pushing", "passing", "perfect", "precious", "part"]
+		"wordpool": ["person", "point", "perhaps", "problems", "peace", "pushing", "passing", "perfect", "precious", "part", "pocket", "poor", "physically", "protected", "protecting", "places", "parts", "pulling", "presence"]
 	},
 	{
 		"letter": "q",
-		"wordpool": ["quiet", "questions"]
+		"wordpool": ["quiet", "questions", "quietly"]
 	},
 	{
 		"letter": "r",
-		"wordpool": ["reasons", "rather", "reassurance", "right", "remember", "reflection", "reach"]
+		"wordpool": ["reasons", "rather", "reassurance", "right", "remember", "reflection", "reach", "rich", "recognize", "rarely", "rushing", "rhythm"]
 	},
 	{
 		"letter": "s",
-		"wordpool": ["sit", "someone", "something", "sometimes", "so", "saddens", "sure", "simple", "sweetest", "start", "silence", "staying", "showing", "should", "staring", "shooting", "star", "seemed", "sun", "see", "shared", "seemed", "still", "stars"]
+		"wordpool": ["sit", "someone", "something", "sometimes", "so", "saddens", "sure", "simple", "sweetest", "start", "silence", "staying", "showing", "should", "staring", "shooting", "star", "seemed", "sun", "see", "shared", "seemed", "still", "stars", "shadow", "spiritually", "show", "scared", "standing", "spark", "suddenly", "scars", "souls", "slowly", "strange", "some", "slightest"]
 	},
 	{
 		"letter": "t",
-		"wordpool": ["think", "to", "that", "they", "thought", "tricked", "the", "them", "thinking", "truth", "this", "than", "turns", "today", "time", "there", "two", "tomorrow", "thoughts"]
+		"wordpool": ["think", "to", "that", "they", "thought", "tricked", "the", "them", "thinking", "truth", "this", "than", "turns", "today", "time", "there", "two", "tomorrow", "thoughts", "tormented", "touch", "too", "take"]
 	},
 	{
 		"letter": "u",
@@ -85,15 +85,15 @@
 	},
 	{
 		"letter": "v",
-		"wordpool": ["very"]
+		"wordpool": ["very", "values", "vault"]
 	},
 	{
 		"letter": "w",
-		"wordpool": ["wondering", "where", "went", "what", "wonder", "would", "willing", "wish", "whatever", "with", "warmth", "without", "way", "want", "when", "we", "working", "wrong", "well", "was", "waiting", "worries"]
+		"wordpool": ["wondering", "where", "went", "what", "wonder", "would", "willing", "wish", "whatever", "with", "warmth", "without", "way", "want", "when", "we", "working", "wrong", "well", "was", "waiting", "worries", "were", "wouldn't", "wealthy", "wealth", "world", "weather", "wreck", "will", "while", "way"]
 	},
 	{
 		"letter": "y",
-		"wordpool": ["you"]
+		"wordpool": ["you", "yourself", "your"]
 	}
  ]
 }
