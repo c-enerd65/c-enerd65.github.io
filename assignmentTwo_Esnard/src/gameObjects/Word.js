@@ -1,3 +1,5 @@
+import makeDraggable from '../scripts/MakeDraggable.js';
+
 const PADDING = 10;
 
 class Word extends Phaser.GameObjects.Container {
@@ -9,7 +11,11 @@ class Word extends Phaser.GameObjects.Container {
         this.y = y;
         this.word = word;
 
-        this.createWordSlip();
+        this.createWordSlip(); 
+
+        this.moved = false;
+        this.checkDragEvent();
+
         this.scene.add.existing(this);
     }
 
@@ -20,13 +26,21 @@ class Word extends Phaser.GameObjects.Container {
         let word_paddingX = this.word_text.width + PADDING;
         let word_paddingY = this.word_text.height + PADDING;
         
-        const background = this.scene.add.rectangle(0, 0, word_paddingX, word_paddingY, 0xC30F16);
+        const background = this.scene.add.rectangle(0, 0, word_paddingX, word_paddingY, 0xFFF6EA);
         background.setOrigin(0);
         
         this.word_text.setPosition(background.x + PADDING / 2, background.y + PADDING / 2);
 
-        this.add(background);
-        this.add(this.word_text);
+        this.add(background).add(this.word_text);
+        this.setSize(word_paddingX * 2, word_paddingY * 2);
+        
+        makeDraggable(this, this.scene, this.x, this.y);
+    }
+
+    checkDragEvent() {
+        this.scene.events.once('word_moved', (x, y) => {
+                this.scene.events.emit('first_drag', x, y);
+        });
     }
 }
 

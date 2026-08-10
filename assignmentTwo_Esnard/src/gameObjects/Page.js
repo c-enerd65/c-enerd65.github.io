@@ -11,7 +11,7 @@ class Page extends Phaser.GameObjects.Container {
     }
 
     createBlankPage() {
-        const background = this.scene.add.rectangle(0, 0, 680, 880, 0x000000);
+        const background = this.scene.add.rectangle(0, 0, 640, 840, 0x000000);
         background.setOrigin(0);
 
         this.add(background);
