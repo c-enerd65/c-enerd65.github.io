@@ -3,7 +3,7 @@ import Word from '../gameObjects/Word.js';
 
 const TOTAL_DISPLAYED_WORDS = 5;
 
-const WORDPOOL_X = 95;
+const WORDPOOL_X = 100;
 const WORDPOOL_Y = 980;
 const WORDPOOL_SPACING = 125;
 
