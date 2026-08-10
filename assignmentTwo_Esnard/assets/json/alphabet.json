@@ -1,0 +1,98 @@
+alpha: {
+	{
+		letter: "a",
+		wordpool: {"and", "are", "anymore", "about", "able", "at", "all", "another", "am", "awful", "attention", "avoiding", "away", "acting", "acts", "above", "alone", "alongside"}
+	},
+	{
+		letter: "b",
+		wordpool: {"been", "but", "be", "because", "betrayed", "burning", "bound", "between", "become", "blind", "break"}
+	},
+	{
+		letter: "c",
+		wordpool: {"come", "can", "could", "cause", "certainty", "conversations", "conflict", "concerning", "comfortability", "catch", "can't", "clarity", "cruelest", "choking"}
+	},
+	{
+		letter: "d",
+		wordpool: {"doing", "do", "disgust", "distraction", "does", "disrespect", "danced", "dying", "dim", "did", "deepest", "dream"}
+	},
+	{
+		letter: "e",
+		wordpool: {"enough", "efforts", "endless", "everything"}
+	},
+	{
+		letter: "f",
+		wordpool: {"fault", "for", "fact", "free", "from", "find", "forceful", "final", "first", "feelings", "feel", "fading", "falling"}
+	},
+	{
+		letter: "g",
+		wordpool: {"grief", "guess", "god", "give", "giving", "glance", "grin", "guard", "gave"}
+	},
+	{
+		letter: "h",
+		wordpool: {"hey", "have", "how", "however", "happened", "honesty", "had", "happen", "hurts", "holding", "harm", "hatred", "her", "heart"}
+	},
+	{
+		letter: "i",
+		wordpool: {"i", "it", "imagine", "in", "is", "it's", "intentions", "if", "illusion"}
+	},
+	{
+		letter: "j",
+		wordpool: {"just"}
+	},
+	{
+		letter: "k",
+		wordpool: {"know", "kiss"}
+	},
+	{
+		letter: "l",
+		wordpool: {"listen", "like", "love", "last", "life", "lies", "loud", "loving", "lovers", "lasting", "living"}
+	},
+	{
+		letter: "m",
+		wordpool: {"mostly", "must", "my", "memories", "myself", "may", "much", "me", "meant", "more", "make", "moon", "moment"}
+	},
+	{
+		letter: "n",
+		wordpool: {"never", "need", "not", "now", "next", "nothing"}
+	},
+	{
+		letter: "o",
+		wordpool: {"ones", "on", "or", "only", "of", "one", "our", "obvious", "obsessive", "overshadowed", "off"}
+	},
+	{
+		letter: "p",
+		wordpool: {"person", "point", "perhaps", "problems", "peace", "pushing", "passing", "perfect", "precious", "part"}
+	},
+	{
+		letter: "q",
+		wordpool: {"quiet", "questions"}
+	},
+	{
+		letter: "r",
+		wordpool: {"reasons", "rather, reassurance", "right", "remember", "reflection", "reach"}
+	},
+	{
+		letter: "s",
+		wordpool: {"sit", "someone", "something", "sometimes", "so", "saddens", "sure", "simple", "sweetest", "start", "silence", "staying", "showing", "should", "staring", "shooting", "star", "seemed", "sun", "see", "shared", "seemed", "still", "stars"}
+	},
+	{
+		letter: "t",
+		wordpool: {"think", "to", "that", "they", "thought", "tricked", "the", "them", "thinking", "truth", "this", "than", "turns", "today", "time", "there", "two", "tomorrow", "thoughts"}
+	},
+	{
+		letter: "u",
+		wordpool: {"unclear", "us", "up", "used"}
+	},
+	{
+		letter: "v",
+		wordpool: {"very"}
+	},
+	{
+		letter: "w",
+		wordpool: {"wondering", "where", "went", "what", "wonder", "would", "willing", "wish", "whatever", "with", "warmth", "without", "way", "want", "when", "we", "working", "wrong", "well", "was", "waiting", "worries"}
+	},
+	{
+		letter: "y",
+		wordpool: {"you"}
+	}
+}
