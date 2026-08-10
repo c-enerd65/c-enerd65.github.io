@@ -1,5 +1,3 @@
-import makeDraggable from '../scripts/MakeDraggable.js';
-
 const PADDING = 10;
 
 class Word extends Phaser.GameObjects.Container {
@@ -34,13 +32,52 @@ class Word extends Phaser.GameObjects.Container {
         this.add(background).add(this.word_text);
         this.setSize(word_paddingX * 2, word_paddingY * 2);
         
-        makeDraggable(this, this.scene, this.x, this.y);
+        this.makeDraggable(this.x, this.y);
     }
 
     checkDragEvent() {
-        this.scene.events.once('word_moved', (x, y) => {
-                this.scene.events.emit('first_drag', x, y);
-        });
+            this.scene.events.once('word_moved', (x, y) => {
+                if(!this.moved) {
+                    console.log("i'm being called!");
+                    this.scene.events.emit('replace_word', x, y);
+                    this.moved = true;
+                }
+                
+                console.log(this.moved);
+            });
+
+    }
+
+    makeDraggable(startX, startY) {
+        this.setInteractive();
+    
+        function startDrag() {
+            this.off(Phaser.Input.Events.POINTER_DOWN, startDrag);
+            this.on(Phaser.Input.Events.POINTER_UP, stopDrag);
+            this.on(Phaser.Input.Events.POINTER_MOVE, onDrag);
+        }
+
+        function stopDrag() {
+            this.on(Phaser.Input.Events.POINTER_DOWN, startDrag);
+            this.off(Phaser.Input.Events.POINTER_UP, stopDrag);
+            this.off(Phaser.Input.Events.POINTER_MOVE, onDrag);
+
+            this.scene.events.emit('word_moved', startX, startY);
+        }
+
+        function onDrag(pointer) {
+            this.x = pointer.x;
+            this.y = pointer.y;
+        }
+
+        function destroy() {
+            this.off(Phaser.Input.Events.POINTER_DOWN, startDrag);
+            this.off(Phaser.Input.Events.POINTER_UP, stopDrag);
+            this.off(Phaser.Input.Events.POINTER_MOVE, onDrag);
+        }
+
+        this.on(Phaser.Input.Events.POINTER_DOWN, startDrag);
+        this.on(Phaser.GameObjects.Events.DESTROY, destroy);
     }
 }
 
