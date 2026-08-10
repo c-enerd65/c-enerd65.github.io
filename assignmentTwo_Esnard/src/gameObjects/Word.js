@@ -1,4 +1,5 @@
 const PADDING = 10;
+const CLICK_PADDING = 1.75;
 
 class Word extends Phaser.GameObjects.Container {
     constructor(scene, x, y, word) {
@@ -25,11 +26,19 @@ class Word extends Phaser.GameObjects.Container {
         
         const background = this.scene.add.rectangle(0, 0, word_paddingX, word_paddingY, 0xFFF6EA);
         background.setOrigin(0);
-        
+
+        let click_paddingX = word_paddingX * CLICK_PADDING;
+        let click_paddingY = word_paddingY * CLICK_PADDING;
+
+        //const debug_bg = this.scene.add.rectangle(0, 0, click_paddingX, click_paddingY, 0x000000);
+
         this.word_text.setPosition(background.x + PADDING / 2, background.y + PADDING / 2);
 
-        this.add(background).add(this.word_text);
-        this.setSize(word_paddingX * 2, word_paddingY * 2);
+        //this.add(debug_bg);
+        
+        this.add(background)
+            .add(this.word_text)
+            .setSize(click_paddingX, click_paddingY);
         
         this.makeDraggable(this.x, this.y);
     }
@@ -42,7 +51,7 @@ class Word extends Phaser.GameObjects.Container {
 
     makeDraggable(startX, startY) {
         this.setInteractive();
-    
+
         function startDrag() {
             this.off(Phaser.Input.Events.POINTER_DOWN, startDrag);
             this.on(Phaser.Input.Events.POINTER_UP, stopDrag);
