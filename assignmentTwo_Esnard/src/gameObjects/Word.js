@@ -18,7 +18,7 @@ class Word extends Phaser.GameObjects.Container {
     }
 
     createWordSlip() {
-        this.word_text = this.scene.add.text(0, 0, `${this.word}`, {fontFamily: 'FSEX', fontSize: '14px', fill: '#000'});
+        this.word_text = this.scene.add.text(0, 0, `${this.word}`, {fontFamily: 'FSEX', fontSize: '20px', fill: '#000'});
         this.word_text.setOrigin(0.6);
 
         let word_paddingX = this.word_text.width + PADDING;
