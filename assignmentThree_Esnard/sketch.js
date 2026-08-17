@@ -47,8 +47,6 @@ async function sendMessage() {
 
   u_input.value('');
 
-  curr_time = millis(); 
-
   setTimeout(wait, 2000);
 }
 

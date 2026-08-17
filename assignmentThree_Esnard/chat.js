@@ -1,23 +1,27 @@
 class Chat {
   constructor() {
-    this.pos_response = true;
   }
 
   respond(u_in) {
-    switch(this.pos_response) {
-      case true:
-        return this.generateReply_good(u_in);
-      case false:
-        return this.generateReply_bad(u_in);
+    return this.convertToBinary(u_in);
+}
+
+  convertToBinary(reply) {
+    let to_convert = "";
+    
+    for(var i = 0; i < reply.length; i++) {
+      to_convert += reply[i].charCodeAt(0).toString(2) + " ";
     }
+    return this.mixLetters(to_convert);
   }
+  
+    mixLetters(reply) {
+      let mix_reply = "";
 
-  generateReply_good(u_in) {
-    return "hello";
+      for(var i = 0; i < reply.length; i++) {
+        mix_reply += reply[floor(random(0, reply.length))];  
+      }
+      
+      return mix_reply;
   }
-
-  generateReply_bad(u_in) {
-    return "goodbye";
-  }
-
 }
