@@ -10,16 +10,16 @@ let delay = 3000;
 let curr_time;
 
 async function setup() {
-  createCanvas(500, 500);
+  createCanvas(400, 400);
 
   font = await loadFont("./fonts/FSEX302.ttf");
 
   u_input = createInput();
-  u_input.size(425);
-  u_input.position(5, 475);
+  u_input.size(325);
+  u_input.position(5, 375);
   
   let send = createButton("send");
-  send.position(450, 476);
+  send.position(350, 376);
   send.mousePressed(sendMessage);
   
   chat_p = createP();
@@ -27,11 +27,12 @@ async function setup() {
   chat_p.style('font-family', 'Courier New');
   chat_p.style('color', 'white');
   
-  chat_p.style('height', '440px');
+  chat_p.style('height', '340px');
+  chat_p.style('width', '387px');
   chat_p.style('overflow-y', 'scroll');
   
   //debug
-  //chat_p.style('border', '1px solid white');
+  chat_p.style('border', '1px solid white');
 
   bot = new Chat();
 }

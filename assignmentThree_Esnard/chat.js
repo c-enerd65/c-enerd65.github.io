@@ -1,8 +1,10 @@
 class Chat {
   constructor() {
+    this.user_orignal = "";
   }
 
   respond(u_in) {
+    this.user_original = u_in;
     return this.convertToBinary(u_in);
 }
 
@@ -22,6 +24,36 @@ class Chat {
         mix_reply += reply[floor(random(0, reply.length))];  
       }
       
-      return mix_reply;
+      return this.convertToString(mix_reply);
+  }
+
+  convertToString(reply){
+    let reply_toString = "";
+    let bin = "";
+
+    for(var i = 0; i < reply.length; i ++)
+    {
+      let temp = "";
+      
+      bin += reply[i];
+      
+      if(i % 8 == 0) {
+        temp += String.fromCharCode(parseInt(bin, 2));
+
+        if(temp.match(/^[ -~]+$/)) {
+          //debug
+          //console.log("Printable string: " + temp);
+          reply_toString += temp;
+        }
+
+        bin = "";
+      }
+    }
+      
+    if(!reply_toString) {
+      return `<span style="color: red;">TypeError: misunderstanding '${this.user_original}'</br><span style="display: inline-block;text-indent: 15%; white-space: nowrap;"> communication is not defined </span></span>`;
+    }
+
+    return reply_toString;
   }
 }
