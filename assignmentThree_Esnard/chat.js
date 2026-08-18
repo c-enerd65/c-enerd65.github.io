@@ -34,10 +34,14 @@ class Chat {
     for(var i = 0; i < reply.length; i ++)
     {
       let temp = "";
+
+      if(reply[i] === " ") {
+        continue;
+      }
       
       bin += reply[i];
       
-      if(i % 8 == 0) {
+      if(bin.length == 8) {
         temp += String.fromCharCode(parseInt(bin, 2));
 
         if(temp.match(/^[ -~]+$/)) {

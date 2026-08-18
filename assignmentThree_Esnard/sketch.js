@@ -48,6 +48,8 @@ async function sendMessage() {
 
   u_input.value('');
 
+  setTimeout(display_buffer, 500);
+  
   setTimeout(wait, 2000);
 }
 
@@ -65,6 +67,12 @@ function bot_respond(message) {
   chat_log = `<span style="color: #66de7a">computer</span>  <span style="font-size: 12px; color: grey;">${String(hour()).padStart(2, '0')}:${String(minute()).padStart(2, '0')}:${String(second()).padStart(2, '0')}</span> </br>${reply}</br></br>` + chat_log;
 
   chat_p.html(chat_log);
+}
+
+function display_buffer() {
+  let buffer_log = `<span style="color: grey;">computer is typing...</span></br></br>` + chat_log;
+
+  chat_p.html(buffer_log);
 }
 
 function draw() {
