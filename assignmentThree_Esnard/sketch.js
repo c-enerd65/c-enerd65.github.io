@@ -32,7 +32,7 @@ async function setup() {
   chat_p.style('overflow-y', 'scroll');
   
   //debug
-  chat_p.style('border', '1px solid white');
+  //chat_p.style('border', '1px solid white');
 
   bot = new Chat();
 }
